@@ -9,6 +9,8 @@ app.use(express.json());
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
+app.use("/resources", express.static("public"));
+
 // Routes
 app.use(require("./routes/homeRoute"));
 
