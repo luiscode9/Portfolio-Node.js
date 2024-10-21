@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-app.get("/", (req, res) => {
+router.get("/", (req, res) => {
   const htmlResponse = `
       <html>
         <head>
