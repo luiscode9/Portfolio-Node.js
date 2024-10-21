@@ -12,8 +12,8 @@ app.set('view engine', 'ejs');
 app.use(require("./routes/index.route"));
 
 // connection
-/*const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
   console.log(`port runing in http://localhost:${port}`);
-});*/
+});
