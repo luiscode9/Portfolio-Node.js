@@ -5,8 +5,10 @@ const express = require("express");
 const app = express();
 app.use(express.json());
 
+app.set('view engine', 'ejs');
+
 // Routes
-app.use(require("./routes/home"));
+app.use(require("./routes/homeRoute"));
 
 // connection
 const port = process.env.PORT || 3000;

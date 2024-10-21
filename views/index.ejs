@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BStudio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="./resources/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./resources/css/style.css" />
+</head>
+
+<body>
+    <div id="index" class="main-container">
+
+        <% if (typeof message !== 'undefined') { %>
+            <div class="toast-notification">
+                <p><%= message %></p>
+            </div>
+        <% } %>
+
+                <!--NAVBAR DESKTOP / MOBILE-->
+                <header class="navbar">
+                    <div class="nav-container">
+                        <a href="#index">
+                            <h1 class="logo"><span class="letter-b">B</span>Studio</h1>
+                        </a>
+                        <nav class="desktop-nav">
+                            <a href="#about" class="link-desktop-nav">ABOUT</a>
+                            <a href="#projects" class="link-desktop-nav">PROJECTS</a>
+                            <a href="#process" class="link-desktop-nav">PROCESS</a>
+                            <a href="#contact" class="link-desktop-nav">CONTACT</a>
+                        </nav>
+                    </div>
+                    <button class="open-menu" id="open-menu">
+                        <i class="ri-menu-line nav_burger"></i>
+                        <i class="ri-close-large-fill nav_close"></i>
+                    </button>
+                    <nav class="menu-mobile" id="menu-mobile">
+                        <ul>
+                            <a href="#about" class="link-mobile-menu">ABOUT</a>
+                            <a href="#projects" class="link-mobile-menu">PROJECTS</a>
+                            <a href="#process" class="link-mobile-menu">PROCESS</a>
+                            <a href="#contact" class="link-mobile-menu">CONTACT</a>
+                        </ul>
+                        <div class="mobile-icon-div">
+                            <a href="https://www.linkedin.com/feed/" target="_blank">
+                                <img alt="linkedin" src="./resources/icons/linkedin.png" class="mobile-linkedin">
+                            </a>
+                            <a href="https://github.com/luiscode9/" target="_blank">
+                                <img alt="github" src="./resources/icons/github.png" class="mobile-github">
+                            </a>
+                        </div>
+                    </nav>
+                </header>
+
+                <!--HEADER HEADING-->
+                <header id="header" class="header-container">
+                    <h1 class="header-heading">DESIGNING INTERFACES</h1>
+                </header>
+
+                <!--HERO SECTION-->
+                <section class="hero-section">
+                    <div class="hero-container">
+                        <div class="hero-left-side">
+                            <div class="hero-content">
+                                <h2 class="hero-heading">
+                                    <span class="text-white">Transforming</span>
+                                    <span class="text-orange">Ideas</span>
+                                    <span class="text-white">into Seamless</span>
+                                    <span class="text-orange">Digital Experiences</span>
+                                </h2>
+                                <span class="hero-text">
+                                    I’m Luis Bossa, a Web Programmer and Digital
+                                    Designer.
+                                    <br />
+                                    <br />
+                                    Committed to Developing Creative Solutions and Engaging Interfaces.
+                                </span>
+                            </div>
+                            <div class="hero-btn-div">
+                                <a href="#projects" class="hero-project h-btn">
+                                    SEE PROJECTS
+                                </a>
+                                <a href="./resources/CV.pdf" download class="hero-download h-btn">
+                                    DOWNLOAD CV
+                                </a>
+                            </div>
+                        </div>
+                        <div class="hero-right-side">
+                            <img alt="hero img" src="./resources/images/photo.jpg" class="hero-img" />
+                        </div>
+                    </div>
+                </section>
+
+                <!-- MARQUEE SECTION -->
+                <section id="marquee" class="marquee-section">
+                    <div class="marquee-container">
+                        <div class="logos-slide">
+                            <div class="marquee-div">
+                                <span class="marquee-title">CUSTOM DESIGNS</span><span class="marquee-arrow">⟺</span>
+                            </div>
+                            <div class="marquee-div">
+                                <span class="marquee-title">CUSTOM DESIGNS</span><span class="marquee-arrow">⟺</span>
+                            </div>
+                            <div class="marquee-div">
+                                <span class="marquee-title">CUSTOM DESIGNS</span><span class="marquee-arrow">⇔</span>
+                            </div>
+                            <div class="marquee-div">
+                                <span class="marquee-title">CUSTOM DESIGNS</span><span class="marquee-arrow">⇔</span>
+                            </div>
+                            <div class="marquee-div">
+                                <span class="marquee-title">CUSTOM DESIGNS</span><span class="marquee-arrow">⇔</span>
+                            </div>
+                            <div class="marquee-div">
+                                <span class="marquee-title">CUSTOM DESIGNS</span><span class="marquee-arrow">⇔</span>
+                            </div>
+                            <div class="marquee-div">
+                                <span class="marquee-title">CUSTOM DESIGNS</span><span class="marquee-arrow">⇔</span>
+                            </div>
+                            <div class="marquee-div">
+                                <span class="marquee-title">CUSTOM DESIGNS</span><span class="marquee-arrow">⇔</span>
+                            </div>
+                        </div>
+                        <div class="logos-slide">
+                            <div class="marquee-div">
+                                <span class="marquee-title">CUSTOM DESIGNS</span><span class="marquee-arrow">⟺</span>
+                            </div>
+                            <div class="marquee-div">
+                                <span class="marquee-title">CUSTOM DESIGNS</span><span class="marquee-arrow">⟺</span>
+                            </div>
+                            <div class="marquee-div">
+                                <span class="marquee-title">CUSTOM DESIGNS</span><span class="marquee-arrow">⇔</span>
+                            </div>
+                            <div class="marquee-div">
+                                <span class="marquee-title">CUSTOM DESIGNS</span><span class="marquee-arrow">⇔</span>
+                            </div>
+                            <div class="marquee-div">
+                                <span class="marquee-title">CUSTOM DESIGNS</span><span class="marquee-arrow">⇔</span>
+                            </div>
+                            <div class="marquee-div">
+                                <span class="marquee-title">CUSTOM DESIGNS</span><span class="marquee-arrow">⇔</span>
+                            </div>
+                            <div class="marquee-div">
+                                <span class="marquee-title">CUSTOM DESIGNS</span><span class="marquee-arrow">⇔</span>
+                            </div>
+                            <div class="marquee-div">
+                                <span class="marquee-title">CUSTOM DESIGNS</span><span class="marquee-arrow">⇔</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ABOUT SECTION -->
+                <section id="about" class="about-section">
+                    <h1 class="about-heading">
+                        ABOUT ME
+                    </h1>
+                    <span class="about-description">
+                        With over <span class="white-bg">3 years</span> of experience in <span class="white-bg">web
+                            development</span>
+                        and <span class="white-bg">digital design</span>, I have a proven history of building <span
+                            class="white-bg">responsive</span>, User-oriented websites and application.
+                        <br />
+                        <br />
+                        My work combines technical proficiency with a <span class="white-bg">keen
+                            eye</span> for aesthetics ensuring seamless functionality and <span
+                            class="white-bg">engaging user
+                            experiences.</span>
+                        <br />
+                        <br />
+                        I have enjoyed working on projects that range from <span class="white-bg">dynamic web
+                            applications</span>
+                        to <span class="white-bg">visually compelling digital interfaces.</span>
+                    </span>
+                </section>
+
+                <!-- EXPERIENCE SECTION -->
+                <section id="experience" class="exp-section">
+                    <h1 class="exp-heading">JOB EXPERIENCE AND FREELANCE</h1>
+                    <div class="exp-container">
+                        <div class="exp-trigger">
+                            <p class="exp-title">
+                                <span>FRONT-END DEVELOPER</span>
+                            </p>
+                            <div class="exp-icons-container">
+                                <p class="exp-year">
+                                    <span>2022</span>
+                                </p>
+                                <svg viewBox="0 0 1024 1024" class="exp-down-arrow">
+                                    <path d="M316 366l196 196 196-196 60 60-256 256-256-256z"></path>
+                                </svg>
+                                <svg viewBox="0 0 1024 1024" class="exp-up-arrow">
+                                    <path d="M316 658l-60-60 256-256 256 256-60 60-196-196z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="exp-content-container">
+                            <span class="exp-info">
+                                <span class="exp-text-heading">EJE Digital</span>
+                                <br />
+                                <br />
+                                <span class="exp-text-subheading">
+                                    Responsive Applications
+                                </span>
+                                <br />
+                                <span class="exp-text">
+                                    A key part of my role involved creating responsive applications. I made sure that
+                                    all the
+                                    web applications
+                                    I worked on were fully optimized for different devices and screen sizes, ensuring a
+                                    smooth
+                                    user experience
+                                    on smartphones, tablets, and desktops.
+                                </span>
+                            </span>
+                        </div>
+                        <div class="exp-trigger exp-line">
+                            <div class="exp-icons-container">
+                                <svg viewBox="0 0 1024 1024" class="exp-down-arrow">
+                                    <path d="M316 366l196 196 196-196 60 60-256 256-256-256z"></path>
+                                </svg>
+                                <svg viewBox="0 0 1024 1024" class="exp-up-arrow">
+                                    <path d="M316 658l-60-60 256-256 256 256-60 60-196-196z"></path>
+                                </svg>
+                                <p class="exp-year">
+                                    <span>2023</span>
+                                </p>
+                            </div>
+                            <p class="exp-title middle-title">
+                                <span>BACK-END DEVELOPER</span>
+                            </p>
+                        </div>
+                        <div class="exp-content-container">
+                            <span class="exp-info">
+                                <span class="exp-text-heading">
+                                    Servicios Integrales JV &amp; JA
+                                </span>
+                                <br />
+                                <br />
+                                <span class="exp-text-subheading">
+                                    Database Design and Management
+                                </span>
+                                <br />
+                                <span class="exp-text">
+                                    I was instrumental in designing and managing databases using Laravel and PHP for
+                                    efficient
+                                    data storage
+                                    and retrieval. This included creating database schemas, writing optimized SQL
+                                    queries, and
+                                    implementing
+                                    strategies for data migration.
+                                </span>
+                            </span>
+                        </div>
+                        <div class="exp-trigger exp-top-line">
+                            <p class="exp-title">
+                                <span>FULL-STACK DEVELOPER</span>
+                            </p>
+                            <div class="exp-icons-container">
+                                <p class="exp-year">
+                                    <span>2024</span>
+                                </p>
+                                <svg viewBox="0 0 1024 1024" class="exp-down-arrow">
+                                    <path d="M316 366l196 196 196-196 60 60-256 256-256-256z"></path>
+                                </svg>
+                                <svg viewBox="0 0 1024 1024" class="exp-up-arrow">
+                                    <path d="M316 658l-60-60 256-256 256 256-60 60-196-196z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="exp-content-container">
+                            <span class="exp-info">
+                                <span class="exp-text-heading">BStudio</span>
+                                <br />
+                                <br />
+                                <span class="exp-text-subheading">
+                                    API Development and Integration
+                                </span>
+                                <br />
+                                <span class="exp-text">
+                                    I develop RESTful APIs to enable communication between frontend and backend
+                                    components. My
+                                    focus is on
+                                    creating robust, well-documented APIs that follow industry standards and ensure
+                                    reliable
+                                    data exchange.
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- PROJECTS SECTION -->
+                <section id="projects" class="projects-section">
+                    <h1 class="projects-heading">THE MAIN PROJECTS</h1>
+                    <div class="project-row-div1">
+                        <div class="video-container1">
+                            <video id="video1" muted loop>
+                                <source src="./resources/videos/video1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project-info-div">
+                            <a href="#" target="_blank" rel="noreferrer noopener" class="view-btn">
+                                <svg width="30" height="30" viewBox="0 0 48 48" class="project-arrow">
+                                    <path d="m11 11l25.456 25.456M29 11H11v18" fill="none" stroke="currentColor"
+                                        stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <h1 class="project-heading">
+                                    <span>E-Commerce</span>
+                                    <br />
+                                </h1>
+                            </a>
+                            <a href="https://github.com/luiscode9/e-commerce" target="_blank" rel="noreferrer noopener"
+                                class="project-link">
+                                <div class="github-btn">
+                                    <svg width="30" height="30" viewBox="0 0 48 48" class="project-arrow b-color">
+                                        <path d="m11 11l25.456 25.456M29 11H11v18" fill="none" stroke="currentColor"
+                                            stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                    <h1 class="project-heading b-color">
+                                        <span>GitHub</span>
+                                        <br />
+                                    </h1>
+                                    <svg width="30" height="30" viewBox="0 0 32 32" class="github-icon">
+                                        <path
+                                            d="M16 2a14 14 0 0 0-4.43 27.28c.7.13 1-.3 1-.67v-2.38c-3.89.84-4.71-1.88-4.71-1.88a3.7 3.7 0 0 0-1.62-2.05c-1.27-.86.1-.85.1-.85a2.94 2.94 0 0 1 2.14 1.45a3 3 0 0 0 4.08 1.16a2.93 2.93 0 0 1 .88-1.87c-3.1-.36-6.37-1.56-6.37-6.92a5.4 5.4 0 0 1 1.44-3.76a5 5 0 0 1 .14-3.7s1.17-.38 3.85 1.43a13.3 13.3 0 0 1 7 0c2.67-1.81 3.84-1.43 3.84-1.43a5 5 0 0 1 .14 3.7a5.4 5.4 0 0 1 1.44 3.76c0 5.38-3.27 6.56-6.39 6.91a3.33 3.33 0 0 1 .95 2.59v3.84c0 .46.25.81 1 .67A14 14 0 0 0 16 2"
+                                            fill="currentColor" fill-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-row-div2">
+                        <div class="project-info-div">
+                            <a href="https://bstudio.site" target="_blank" rel="noreferrer noopener" class="view-btn">
+                                <h1 class="project-heading">
+                                    <span>News Website</span>
+                                    <br />
+                                </h1>
+                                <svg width="30" height="30" viewBox="0 0 48 48" class="project-arrow">
+                                    <path d="M19 11h18v18m-25.456 7.456L37 11" fill="none" stroke="currentColor"
+                                        stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/luiscode9/newspaper" target="_blank" rel="noreferrer noopener"
+                                class="project-link">
+                                <div class="github-btn">
+                                    <svg width="30" height="30" viewBox="0 0 32 32" class="github-icon">
+                                        <path
+                                            d="M16 2a14 14 0 0 0-4.43 27.28c.7.13 1-.3 1-.67v-2.38c-3.89.84-4.71-1.88-4.71-1.88a3.7 3.7 0 0 0-1.62-2.05c-1.27-.86.1-.85.1-.85a2.94 2.94 0 0 1 2.14 1.45a3 3 0 0 0 4.08 1.16a2.93 2.93 0 0 1 .88-1.87c-3.1-.36-6.37-1.56-6.37-6.92a5.4 5.4 0 0 1 1.44-3.76a5 5 0 0 1 .14-3.7s1.17-.38 3.85 1.43a13.3 13.3 0 0 1 7 0c2.67-1.81 3.84-1.43 3.84-1.43a5 5 0 0 1 .14 3.7a5.4 5.4 0 0 1 1.44 3.76c0 5.38-3.27 6.56-6.39 6.91a3.33 3.33 0 0 1 .95 2.59v3.84c0 .46.25.81 1 .67A14 14 0 0 0 16 2"
+                                            fill="currentColor" fill-rule="evenodd"></path>
+                                    </svg>
+                                    <h1 class="project-heading b-color">
+                                        <span>GitHub</span>
+                                        <br />
+                                    </h1>
+                                    <svg width="30" height="30" viewBox="0 0 48 48" class="project-arrow b-color">
+                                        <path d="M19 11h18v18m-25.456 7.456L37 11" fill="none" stroke="currentColor"
+                                            stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="video-container2">
+                            <video id="video2" muted loop>
+                                <source src="./resources/videos/video2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- TECH MARQUEE SECTION -->
+                <section id="tools" class="tech-container">
+                    <h1 class="tech-heading">TECHNOLOGIES</h1>
+                    <div class="tech-marquee-container">
+                        <div class="logos-slide">
+                            <img src="./resources/technologies/html.png">
+                            <img src="./resources/technologies/css.png">
+                            <img src="./resources/technologies/js.png">
+                            <img src="./resources/technologies/jquery.png">
+                            <img src="./resources/technologies/ts.png">
+                            <img src="./resources/technologies/node.png">
+                            <img src="./resources/technologies/php.png">
+                            <img src="./resources/technologies/git.png">
+                            <img src="./resources/technologies/github.png">
+                            <img src="./resources/technologies/bootstrap.png">
+                            <img src="./resources/technologies/tail.png">
+                            <img src="./resources/technologies/java.png">
+                            <img src="./resources/technologies/csharp.png">
+                            <img src="./resources/technologies/netcore.png">
+                            <img src="./resources/technologies/reactjs.png">
+                            <img src="./resources/technologies/postgresql.png">
+                            <img src="./resources/technologies/sqlserver.png">
+                            <img src="./resources/technologies/vscode.png">
+                            <img src="./resources/technologies/visual.png">
+                            <img src="./resources/technologies/sublimetext.png">
+                        </div>
+                        <div class="logos-slide">
+                            <img src="./resources/technologies/html.png">
+                            <img src="./resources/technologies/css.png">
+                            <img src="./resources/technologies/js.png">
+                            <img src="./resources/technologies/jquery.png">
+                            <img src="./resources/technologies/ts.png">
+                            <img src="./resources/technologies/node.png">
+                            <img src="./resources/technologies/php.png">
+                            <img src="./resources/technologies/git.png">
+                            <img src="./resources/technologies/github.png">
+                            <img src="./resources/technologies/bootstrap.png">
+                            <img src="./resources/technologies/tail.png">
+                            <img src="./resources/technologies/java.png">
+                            <img src="./resources/technologies/csharp.png">
+                            <img src="./resources/technologies/netcore.png">
+                            <img src="./resources/technologies/reactjs.png">
+                            <img src="./resources/technologies/postgresql.png">
+                            <img src="./resources/technologies/sqlserver.png">
+                            <img src="./resources/technologies/vscode.png">
+                            <img src="./resources/technologies/visual.png">
+                            <img src="./resources/technologies/sublimetext.png">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- PROCESS SECTION -->
+                <section id="process" class="process-section">
+                    <div class="process-container">
+                        <div class="process-title">
+                            <h2 class="process-heading">
+                                the <span class="text-orange">secret</span> to MY design process
+                            </h2>
+                        </div>
+                        <div class="process-cards-content">
+                            <div class="process-card">
+                                <h2>
+                                    <span class="process-title">
+                                        UNDERSTAND
+                                    </span>
+                                </h2>
+                                <span>
+                                    <span class="process-text">
+                                        The first step to any successful project is getting to
+                                        know the people we’re designing for.
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="process-card second">
+                                <h2>
+                                    <span class="process-title">EXPLORE</span>
+                                </h2>
+                                <span>
+                                    <span class="process-text">
+                                        With my research boundaries set, I explore limitless
+                                        possibilities for the project’s look, feel, and
+                                        function.
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="process-card third">
+                                <h2>
+                                    <span class="process-title">CREATE</span>
+                                </h2>
+                                <span>
+                                    <span class="process-text">
+                                        Finally, I develop my initial design, consulting
+                                        external collaborators to ensure efficiency and user
+                                        focus.
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="process-card fourth">
+                                <h2>
+                                    <span class="process-title">IMPROVE</span>
+                                </h2>
+                                <span>
+                                    <span class="process-text ">
+                                        After completing the initial design, I keep assessing
+                                        and refining the product as needs and goals evolve.
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FORM SECTION -->
+                <section id="contact" class="form-section">
+                    <div class="form-content">
+                        <div class="form-title">
+                            <h1 class="form-heading">CONTACT FORM</h1>
+                            <h2 class="form-subheading">Got a project or question? I’d like to hear from you!</h2>
+                        </div>
+                        <form id="form-contact" class="form-contact" action="/" method="post">
+                            <input type="text" id="name" placeholder="Name" class="inputs" autocomplete="off"
+                                name="name" />
+                            <input type="email" id="email" required="true" placeholder="Email" class="inputs"
+                                autocomplete="off" name="email" />
+                            <textarea id="text-area" rows="3" placeholder="Enter your message" class="inputs textarea"
+                                name="description"></textarea>
+                            <button type="submit" class="submit-btn" id="submit-btn">
+                                SUBMIT
+                            </button>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- INFO FOOTER SECTION -->
+                <footer id="info" class="footer-container">
+                    <div class="left-footer-div">
+                        <div class="email-div">
+                            <svg viewBox="0 0 24 24" class="email-icon">
+                                <path
+                                    d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm3.519 0L12 11.671L18.481 6zM20 7.329l-7.341 6.424a1 1 0 0 1-1.318 0L4 7.329V18h16z"
+                                    fill="currentColor"></path>
+                            </svg>
+                            <p class="footer-email">
+                                <span>lebossamedina@gmail.com</span>
+                            </p>
+                            <svg viewBox="0 0 48 48" class="footer-arrow">
+                                <path d="M19 11h18v18m-25.456 7.456L37 11" fill="none" stroke="currentColor"
+                                    stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <div class="address-div">
+                            <svg viewBox="0 0 24 24" class="location-icon">
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5"
+                                    fill="currentColor"></path>
+                            </svg>
+                            <p class="footer-address">
+                                <span>San José, Costa Rica</span>
+                            </p>
+                            <svg viewBox="0 0 48 48" class="footer-arrow">
+                                <path d="M19 11h18v18m-25.456 7.456L37 11" fill="none" stroke="currentColor"
+                                    stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                        <div class="cel-div">
+                            <svg viewBox="0 0 24 24" class="phone-icon">
+                                <path
+                                    d="M17 19H7V5h10m0-4H7c-1.11 0-2 .89-2 2v18a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2"
+                                    fill="currentColor"></path>
+                            </svg>
+                            <p class="footer-phone">
+                                <span>(506) 6414-5674</span>
+                            </p>
+                            <svg viewBox="0 0 48 48" class="footer-arrow">
+                                <path d="M19 11h18v18m-25.456 7.456L37 11" fill="none" stroke="currentColor"
+                                    stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="right-footer-div">
+                        <a href="https://github.com/luiscode9/" target="_blank" rel="noreferrer noopener"
+                            class="project-link">
+                            <div class="github-div">
+                                <svg viewBox="0 0 24 24" class="github2">
+                                    <g fill="none">
+                                        <path
+                                            d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z">
+                                        </path>
+                                        <path
+                                            d="M7.024 2.31a9 9 0 0 1 2.125 1.046A11.4 11.4 0 0 1 12 3c.993 0 1.951.124 2.849.355a9 9 0 0 1 2.124-1.045c.697-.237 1.69-.621 2.28.032c.4.444.5 1.188.571 1.756c.08.634.099 1.46-.111 2.28C20.516 7.415 21 8.652 21 10c0 2.042-1.106 3.815-2.743 5.043a9.5 9.5 0 0 1-2.59 1.356c.214.49.333 1.032.333 1.601v3a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-.991c-.955.117-1.756.013-2.437-.276c-.712-.302-1.208-.77-1.581-1.218c-.354-.424-.74-1.38-1.298-1.566a1 1 0 0 1 .632-1.898c.666.222 1.1.702 1.397 1.088c.48.62.87 1.43 1.63 1.753c.313.133.772.22 1.49.122L8 17.98a4 4 0 0 1 .333-1.581a9.5 9.5 0 0 1-2.59-1.356C4.106 13.815 3 12.043 3 10c0-1.346.483-2.582 1.284-3.618c-.21-.82-.192-1.648-.112-2.283l.005-.038c.073-.582.158-1.267.566-1.719c.59-.653 1.584-.268 2.28-.031Z"
+                                            fill="currentColor"></path>
+                                    </g>
+                                </svg>
+                                <p class="social1">
+                                    <span>GitHub</span>
+                                    <br />
+                                </p>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer noopener"
+                            class="link2">
+                            <div class="linkedin-div">
+                                <svg viewBox="0 0 24 24" class="linkedin2">
+                                    <path
+                                        d="M9.429 8.969h3.714v1.85c.535-1.064 1.907-2.02 3.968-2.02c3.951 0 4.889 2.118 4.889 6.004V22h-4v-6.312c0-2.213-.535-3.461-1.897-3.461c-1.889 0-2.674 1.345-2.674 3.46V22h-4zM2.57 21.83h4V8.799h-4zM7.143 4.55a2.53 2.53 0 0 1-.753 1.802a2.57 2.57 0 0 1-1.82.748a2.6 2.6 0 0 1-1.818-.747A2.55 2.55 0 0 1 2 4.55c0-.677.27-1.325.753-1.803A2.58 2.58 0 0 1 4.571 2c.682 0 1.336.269 1.819.747s.753 1.126.753 1.803"
+                                        fill="currentColor" clip-rule="evenodd" fill-rule="evenodd"></path>
+                                </svg>
+                                <p class="social2">
+                                    <span>LinkedIn</span>
+                                    <br />
+                                </p>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/64145674" target="_blank" rel="noreferrer noopener" class="link3">
+                            <div class="whatsapp-div">
+                                <svg viewBox="0 0 24 24" class="whatsapp">
+                                    <g fill="currentColor">
+                                        <path
+                                            d="M12 4a8 8 0 0 0-6.895 12.06l.569.718l-.697 2.359l2.32-.648l.379.243A8 8 0 1 0 12 4M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382l1.426-4.829l-.006-.007l-.033-.055A9.96 9.96 0 0 1 2 12"
+                                            clip-rule="evenodd" fill-rule="evenodd"></path>
+                                        <path
+                                            d="M16.735 13.492c-.038-.018-1.497-.736-1.756-.83a1 1 0 0 0-.34-.075c-.196 0-.362.098-.49.291c-.146.217-.587.732-.723.886c-.018.02-.042.045-.057.045c-.013 0-.239-.093-.307-.123c-1.564-.68-2.751-2.313-2.914-2.589c-.023-.04-.024-.057-.024-.057c.005-.021.058-.074.085-.101c.08-.079.166-.182.249-.283l.117-.14c.121-.14.175-.25.237-.375l.033-.066a.68.68 0 0 0-.02-.64c-.034-.069-.65-1.555-.715-1.711c-.158-.377-.366-.552-.655-.552c-.027 0 0 0-.112.005c-.137.005-.883.104-1.213.311c-.35.22-.94.924-.94 2.16c0 1.112.705 2.162 1.008 2.561l.041.06c1.161 1.695 2.608 2.951 4.074 3.537c1.412.564 2.081.63 2.461.63c.16 0 .288-.013.4-.024l.072-.007c.488-.043 1.56-.599 1.804-1.276c.192-.534.243-1.117.115-1.329c-.088-.144-.239-.216-.43-.308">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <p class="social3">
+                                    <span>WhatsApp</span>
+                                    <br />
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </footer>
+
+                <!-- FOOTER 2TH PART -->
+                <footer id="footer" class="top-container">
+                    <div class="top-dark-container">
+                        <span class="footer-brand">© <span class="letter-b">B</span>Studio</span>
+                        <a href="#index" class="back-to-top-btn">
+                            <span class="top-text-btn">
+                                <span>BACK TO TOP</span>
+                            </span>
+                            <svg width="25" height="25" viewBox="0 0 48 48" class="b-color">
+                                <defs>
+                                    <mask id="circle-up">
+                                        <g fill="none" stroke-width="4" stroke-linejoin="round">
+                                            <path
+                                                d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z"
+                                                fill="#fff" stroke="#fff"></path>
+                                            <path d="M24 33.5v-18m9 9l-9-9l-9 9" stroke="#000" stroke-linecap="round">
+                                            </path>
+                                        </g>
+                                    </mask>
+                                </defs>
+                                <path d="M0 0h48v48H0z" fill="currentColor" mask="url(#circle-up)"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </footer>
+    </div>
+    <script src="./resources/scripts/main.js"></script>
+</body>
+
+</html>
