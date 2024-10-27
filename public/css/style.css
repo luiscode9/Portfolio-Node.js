@@ -690,6 +690,7 @@ video::media-controls {
   width: auto;
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -719,7 +720,6 @@ video::media-controls {
 }
 
 .github-btn {
-  width: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -735,12 +735,6 @@ video::media-controls {
 
 .github-btn:hover {
   background-color: var(--clr-neutral-light);
-}
-
-.github-icon {
-  width: 25px;
-  height: 25px;
-  color: var(--clr-mate);
 }
 
 .project-row-div2 {
@@ -867,9 +861,7 @@ video::media-controls {
 .process-title {
   position: sticky;
   top: 10%;
-  font-family: druktext;
   font-size: 2rem;
-  font-weight: 800;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1130,10 +1122,6 @@ textarea::-webkit-scrollbar {
   justify-content: center;
 }
 
-.link3 {
-  display: contents;
-}
-
 .github-div {
   gap: var(--space-halfunit);
   flex: 0 0 auto;
@@ -1217,6 +1205,10 @@ textarea::-webkit-scrollbar {
 
 .middle-title {
   text-align: end;
+}
+
+.project-link {
+  width: 100%;
 }
 
 /*---------------- BACK TO TOP FOOTER -------------------*/
@@ -1365,10 +1357,6 @@ textarea::-webkit-scrollbar {
     flex-direction: column;
   }
 
-  .project-info-div1 {
-    flex-direction: row;
-  }
-
   .project-row-div2 {
     flex-direction: column-reverse;
   }
@@ -1380,6 +1368,10 @@ textarea::-webkit-scrollbar {
   .video-container1,
   .video-container2 {
     width: 70%;
+  }
+
+  .project-info-div {
+    width: 100%;
   }
 
   .tech-container {
@@ -1479,15 +1471,10 @@ textarea::-webkit-scrollbar {
     font-size: 1rem;
   }
 
-  .projects-section {
+  .projects-section,
+  .project-info-div {
     padding-left: var(--space-twounits);
     padding-right: var(--space-twounits);
-  }
-
-  .project-info-div1 {
-    padding-left: var(--space-twounits);
-    padding-right: var(--space-twounits);
-    flex-direction: column;
   }
 
   .project-heading {
@@ -1497,10 +1484,6 @@ textarea::-webkit-scrollbar {
   .video-container1,
   .video-container2 {
     width: 90%;
-  }
-
-  .github-btn {
-    width: 230px;
   }
 
   .tech-marquee-container {
@@ -1523,7 +1506,7 @@ textarea::-webkit-scrollbar {
 
   .process-title {
     position: static;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     text-align: center;
   }
 
@@ -1551,6 +1534,7 @@ textarea::-webkit-scrollbar {
     width: 100%;
     border-width: 0px;
     border-right-width: 0px;
+    padding-right: 0px;
   }
 
   .footer-email {
@@ -1691,6 +1675,7 @@ textarea::-webkit-scrollbar {
 
   .marquee-title {
     font-family: degulartext;
+    font-weight: 700;
   }
 
   .about-description {
@@ -1733,7 +1718,7 @@ textarea::-webkit-scrollbar {
   }
 
   .project-heading {
-    width: 100%;
+    width: auto;
     font-size: 0.9rem;
   }
 
@@ -1745,12 +1730,12 @@ textarea::-webkit-scrollbar {
     grid-gap: var(--space-unit);
   }
 
-  .process-card {
-    padding: var(--space-unit);
-  }
-
   .process-title {
     font-size: 1.3rem;
+  }
+
+  .process-card {
+    padding: var(--space-unit);
   }
 
   .process-text {
