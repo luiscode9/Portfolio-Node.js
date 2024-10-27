@@ -17,11 +17,9 @@ const send = async (req, res) => {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS,
     },
-    tls: {
-      rejectUnauthorized: true,
-    },
+    debug: true,
   });
-
+  
   const mailOptions = {
     to: process.env.EMAIL_USER,
     subject: "Node Contact Request",
