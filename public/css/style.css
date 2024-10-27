@@ -686,6 +686,10 @@ video::media-controls {
   display: none !important;
 }
 
+.res-img {
+  display: none;
+}
+
 .project-info-div {
   width: auto;
   height: 100%;
@@ -1574,6 +1578,22 @@ textarea::-webkit-scrollbar {
   }
 }
 
+@media(max-width: 600px) {
+
+  .video-container1,
+  .video-container2 {
+    display: none;
+  }
+
+  .res-img {
+    display: flex;
+  }
+
+  .github-btn {
+    background-color: var(--clr-neutral-light);
+  }
+}
+
 @media(max-width: 500px) {
   .logo {
     font-size: 1.1rem;
@@ -1720,6 +1740,11 @@ textarea::-webkit-scrollbar {
   .project-heading {
     width: auto;
     font-size: 0.9rem;
+  }
+
+  .project-arrow {
+    width: 18px;
+    height: 18px;
   }
 
   .process-section {

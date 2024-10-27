@@ -9,17 +9,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
         integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 </head>
 
 <body>
     <div id="index" class="main-container">
 
-        <% if (typeof message !== 'undefined') { %>
+        <% if (typeof message !=='undefined' ) { %>
             <div class="toast-notification">
-                <p><%= message %></p>
+                <p>
+                    <%= message %>
+                </p>
             </div>
-        <% } %>
+            <% } %>
 
                 <!--NAVBAR DESKTOP / MOBILE-->
                 <header class="navbar">
@@ -302,9 +304,10 @@
                                 <source src="/videos/video1.mp4" type="video/mp4">
                             </video>
                         </div>
+                        <img alt="phone image" src="/images/res1.png" class="res-img">
                         <div class="project-info-div">
-                            <a href="https://ecom-olive-rho.vercel.app/" target="_blank"  class="view-btn">
-                                <svg width="30" height="30" viewBox="0 0 48 48" class="project-arrow">
+                            <a href="https://ecom-olive-rho.vercel.app/" target="_blank" class="view-btn">
+                                <svg viewBox="0 0 48 48" class="project-arrow">
                                     <path d="m11 11l25.456 25.456M29 11H11v18" fill="none" stroke="currentColor"
                                         stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
                                 </svg>
@@ -315,7 +318,7 @@
                             </a>
                             <a href="https://github.com/luiscode9/Ecommerce-Node.js" target="_blank">
                                 <div class="github-btn">
-                                    <svg width="30" height="30" viewBox="0 0 48 48" class="project-arrow b-color">
+                                    <svg viewBox="0 0 48 48" class="project-arrow b-color">
                                         <path d="m11 11l25.456 25.456M29 11H11v18" fill="none" stroke="currentColor"
                                             stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
                                     </svg>
@@ -334,7 +337,7 @@
                                     <span>News Website</span>
                                     <br />
                                 </h1>
-                                <svg width="30" height="30" viewBox="0 0 48 48" class="project-arrow">
+                                <svg viewBox="0 0 48 48" class="project-arrow">
                                     <path d="M19 11h18v18m-25.456 7.456L37 11" fill="none" stroke="currentColor"
                                         stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
                                 </svg>
@@ -345,7 +348,7 @@
                                         <span>GitHub</span>
                                         <br />
                                     </h1>
-                                    <svg width="30" height="30" viewBox="0 0 48 48" class="project-arrow b-color">
+                                    <svg viewBox="0 0 48 48" class="project-arrow b-color">
                                         <path d="M19 11h18v18m-25.456 7.456L37 11" fill="none" stroke="currentColor"
                                             stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
                                     </svg>
@@ -357,6 +360,7 @@
                                 <source src="/videos/video2.mp4" type="video/mp4">
                             </video>
                         </div>
+                        <img alt="phone image" src="/images/res2.png" class="res-img">
                     </div>
                 </section>
 
@@ -558,8 +562,7 @@
                                 </p>
                             </div>
                         </a>
-                        <a href="https://www.linkedin.com/feed/" target="_blank" 
-                            class="project-link">
+                        <a href="https://www.linkedin.com/feed/" target="_blank" class="project-link">
                             <div class="linkedin-div">
                                 <svg viewBox="0 0 24 24" class="linkedin2">
                                     <path
@@ -572,7 +575,7 @@
                                 </p>
                             </div>
                         </a>
-                        <a href="https://wa.me/64145674" target="_blank"  class="project-link">
+                        <a href="https://wa.me/64145674" target="_blank" class="project-link">
                             <div class="whatsapp-div">
                                 <svg viewBox="0 0 24 24" class="whatsapp">
                                     <g fill="currentColor">
