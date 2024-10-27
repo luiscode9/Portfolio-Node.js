@@ -35,7 +35,6 @@ const send = async (req, res) => {
       .status(200)
       .render("index", { message: "Email sent successfully." });
   } catch (error) {
-    console.error("Error sending email:", error); // Log the error for debugging
     return res.status(500).render("index", { message: "Error sending email." });
   }
 };
