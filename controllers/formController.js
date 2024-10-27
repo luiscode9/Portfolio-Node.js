@@ -14,8 +14,8 @@ const send = async (req, res) => {
     port: 465,
     secure: true,
     auth: {
-      user: process.env.EMAIL_USER, // Use environment variable for user
-      pass: process.env.EMAIL_PASS, // Use environment variable for password
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
     },
     tls: {
       rejectUnauthorized: true,
@@ -23,7 +23,7 @@ const send = async (req, res) => {
   });
 
   const mailOptions = {
-    to: process.env.EMAIL_USER, // Send to the same user
+    to: process.env.EMAIL_USER,
     subject: "Node Contact Request",
     text: "Thanks for contacting me!",
     html: output,
@@ -31,12 +31,10 @@ const send = async (req, res) => {
 
   try {
     await transporter.sendMail(mailOptions);
-    console.log("Email has been sent");
     return res
       .status(200)
       .render("index", { message: "Email sent successfully." });
   } catch (error) {
-    console.error("Error sending email:", error);
     return res.status(500).render("index", { message: "Error sending email." });
   }
 };
