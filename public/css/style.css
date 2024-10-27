@@ -565,13 +565,13 @@ img {
 }
 
 .exp-down-arrow {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 }
 
 .exp-up-arrow {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   display: none;
 }
 
@@ -1586,6 +1586,7 @@ textarea::-webkit-scrollbar {
   }
 
   .res-img {
+    width: 100%;
     display: flex;
   }
 
@@ -1652,7 +1653,7 @@ textarea::-webkit-scrollbar {
   }
 
   .hero-left-side {
-    padding: var(--space-twounits) var(--space-unit);
+    padding: var(--space-20) var(--space-unit);
   }
 
   .nav_close {
@@ -1730,7 +1731,13 @@ textarea::-webkit-scrollbar {
 
   .exp-title,
   .exp-year {
-    font-size: 0.8rem;
+    font-family: degulartext;
+  }
+
+  .exp-down-arrow,
+  .exp-up-arrow {
+    width: 25px;
+    height: 25px;
   }
 
   .projects-section {
@@ -1739,7 +1746,8 @@ textarea::-webkit-scrollbar {
 
   .project-heading {
     width: auto;
-    font-size: 0.9rem;
+    font-family: degulartext;
+    font-size: 1.1rem;
   }
 
   .project-arrow {
@@ -1756,7 +1764,7 @@ textarea::-webkit-scrollbar {
   }
 
   .process-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .process-card {
@@ -1781,8 +1789,8 @@ textarea::-webkit-scrollbar {
   }
 
   .submit-btn {
-    height: 50px;
-    font-size: 1rem;
+    height: 46px;
+    font-size: 0.9rem;
   }
 
   .footer-container {
