@@ -124,7 +124,7 @@ img {
 }
 
 .toast-notification {
-  width: 14%;
+  width: auto;
   position: fixed;
   top: 130px;
   right: var(--space-twounits);
@@ -136,10 +136,10 @@ img {
   font-size: 1.1rem;
   letter-spacing: 0.5px;
   opacity: 0;
-  padding: 12px 0;
+  padding: 12px;
   border-radius: var(--radius-8);
   color: var(--clr-mate);
-  border: 2px solid var(--clr-neutral-light);
+  border: 2px solid var(--clr-mate);
   background-color: var(--clr-light-orange);
   z-index: 1000;
   animation: alert-animation 4s forwards;
@@ -1433,6 +1433,11 @@ textarea::-webkit-scrollbar {
     border-right-width: 2px;
     border-bottom-width: 2px;
   }
+
+  .toast-notification {
+    top: 90px;
+    right: var(--space-unit);
+  }
 }
 
 @media(max-width: 767px) {
@@ -1627,7 +1632,7 @@ textarea::-webkit-scrollbar {
     background-color: var(--clr-mate);
     color: var(--clr-neutral-light);
     border-bottom: 2px solid var(--clr-neutral-light);
-    border-left: 3px solid var(--clr-neutral-light);
+    border-left: 2px solid var(--clr-neutral-light);
     border-right: 2px solid var(--clr-neutral-light);
     z-index: 100;
     overflow: hidden;
@@ -1643,7 +1648,7 @@ textarea::-webkit-scrollbar {
   }
 
   .hero-left-side {
-    padding: var(--space-unit);
+    padding: var(--space-twounits) var(--space-unit);
   }
 
   .nav_close {
@@ -1658,11 +1663,17 @@ textarea::-webkit-scrollbar {
     display: flex;
   }
 
+  .header-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .header-heading {
     font-size: 8vw;
   }
 
   .hero-heading {
+    font-family: degulartext;
     font-size: 1.7rem;
   }
 
@@ -1676,6 +1687,10 @@ textarea::-webkit-scrollbar {
 
   .marquee-container {
     transform: rotate(0);
+  }
+
+  .marquee-title {
+    font-family: degulartext;
   }
 
   .about-description {
@@ -1740,6 +1755,10 @@ textarea::-webkit-scrollbar {
 
   .process-text {
     font-size: 1.2rem;
+  }
+
+  .form-subheading {
+    font-family: degulartext;
   }
 
   .form-section {

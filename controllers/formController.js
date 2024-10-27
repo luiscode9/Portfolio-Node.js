@@ -32,9 +32,9 @@ const send = async (req, res) => {
     await transporter.sendMail(mailOptions);
     return res
       .status(200)
-      .render("index", { message: "Email sent successfully." });
+      .render("index", { message: "Email sent successfully" });
   } catch (error) {
-    return res.status(500).render("index", { message: "Error sending email." });
+    return res.status(500).render("index", { message: "Error sending email" });
   }
 };
 
