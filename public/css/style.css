@@ -567,12 +567,16 @@ img {
 .exp-down-arrow {
   width: 35px;
   height: 35px;
+  border: 3px solid var(--clr-neutral-dark);
+  border-radius: var(--radius-50);
 }
 
 .exp-up-arrow {
   width: 35px;
   height: 35px;
   display: none;
+  border-radius: var(--radius-50);
+  border: 3px solid var(--clr-neutral-dark);
 }
 
 .exp-content-container {
@@ -1004,7 +1008,7 @@ textarea::-webkit-scrollbar {
 }
 
 .submit-btn:hover:before {
-  top: 1px;
+  top: -1px;
 }
 
 /*----------------- FOOTER ------------------*/
@@ -1586,7 +1590,7 @@ textarea::-webkit-scrollbar {
   }
 
   .res-img {
-    width: 100%;
+    width: 95%;
     display: flex;
   }
 
@@ -1738,6 +1742,7 @@ textarea::-webkit-scrollbar {
   .exp-up-arrow {
     width: 25px;
     height: 25px;
+    border: 2px solid;
   }
 
   .projects-section {
