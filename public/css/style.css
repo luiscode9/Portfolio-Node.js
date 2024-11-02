@@ -721,7 +721,7 @@ video::media-controls {
   background-repeat: no-repeat;
   background-position: left center;
   box-shadow: 5px 5px 0px 0px #595959;
-  border: 2px solid var(--clr-mate);
+  border: 2px solid var(--clr-neutral-light);
   background: linear-gradient(15deg, #1C1C1C, #17202a, #212f3d, #273746, #566573, #273746, #212f3d, #17202a, #1C1C1C);
   background-size: 300%;
   gap: var(--space-unit);
@@ -730,6 +730,7 @@ video::media-controls {
 }
 
 .view-btn:hover {
+  background-size: 320%;
   background-position: right center;
 }
 
@@ -997,6 +998,7 @@ textarea::-webkit-scrollbar {
   background-repeat: no-repeat;
   background-position: left center;
   box-shadow: 5px 5px 0px 0px #595959;
+  border: 2px solid var(--clr-neutral-light);
   background: linear-gradient(15deg, #1C1C1C, #17202a, #212f3d, #273746, #566573, #273746, #212f3d, #17202a, #1C1C1C);
   background-size: 300%;
   cursor: pointer;
@@ -1004,6 +1006,7 @@ textarea::-webkit-scrollbar {
 }
 
 .submit-btn:hover {
+  background-size: 320%;
   background-position: right center;
 }
 
