@@ -344,7 +344,7 @@ img {
 }
 
 .hero-left-side {
-  width: 42%;
+  width: 41%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -405,8 +405,8 @@ img {
 }
 
 .hero-right-side {
-  width: 55%;
-  height: 663px;
+  width: 60%;
+  height: 726px;
 }
 
 .hero-img {
