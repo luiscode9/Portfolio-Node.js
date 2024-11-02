@@ -863,7 +863,6 @@ video::media-controls {
 
 .process-card {
   position: sticky;
-  top: 10%;
   display: flex;
   flex-direction: column;
   border: 2px solid var(--clr-mate);
@@ -872,7 +871,6 @@ video::media-controls {
   margin-bottom: var(--space-twounits);
   background-color: var(--clr-neutral-light);
   box-shadow: 5px 5px 0px 0px #595959;
-  gap: var(--space-oneandhalfunits);
 }
 
 .process-title {
@@ -883,7 +881,6 @@ video::media-controls {
   flex-direction: column;
   align-items: flex-start;
   color: var(--clr-mate);
-  gap: var(--space-oneandhalfunits);
 }
 
 .process-text {
@@ -892,6 +889,10 @@ video::media-controls {
   font-size: 1.5rem;
   font-weight: 500;
   font-family: degulartext;
+}
+
+.first {
+  top: 10%;
 }
 
 .second {
@@ -1888,7 +1889,7 @@ textarea::-webkit-scrollbar {
   }
 
   .back-to-top-btn {
-    padding: 4px 3.3px;
+    padding: 4px;
   }
 
   .top-text-btn {
