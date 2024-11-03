@@ -708,6 +708,7 @@ video::media-controls {
 }
 
 .project-title {
+  color: var(--clr-mate);
   text-transform: uppercase;
   margin-bottom: var(--space-unit);
 }
