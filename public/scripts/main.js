@@ -4,16 +4,24 @@ const openMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId);
   const nav = document.getElementById(navId);
   const menuItems = nav.querySelectorAll("li");
+  const body = document.body; 
 
   toggle.addEventListener("click", () => {
     nav.classList.toggle("show-menu");
     toggle.classList.toggle("show-icon");
+
+    if (nav.classList.contains("show-menu")) {
+      body.classList.add("no-scroll");
+    } else {
+      body.classList.remove("no-scroll");
+    }
   });
 
   menuItems.forEach((item) => {
     item.addEventListener("click", () => {
       nav.classList.remove("show-menu");
       toggle.classList.remove("show-icon");
+      body.classList.remove("no-scroll"); 
     });
   });
 };
