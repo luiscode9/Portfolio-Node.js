@@ -50,12 +50,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   videoContainer.addEventListener("mouseover", () => {
     video.play();
-    videoContainer.style.opacity = "1";
+    videoContainer.classList.remove("floating");
   });
 
   videoContainer.addEventListener("mouseout", () => {
     video.pause();
-    videoContainer.style.opacity = "0.8";
+    videoContainer.classList.add("floating");
   });
 });
 
@@ -65,11 +65,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   videoContainer.addEventListener("mouseover", () => {
     video.play();
-    videoContainer.style.opacity = "1";
+    videoContainer.classList.remove("floating");
   });
 
   videoContainer.addEventListener("mouseout", () => {
     video.pause();
-    videoContainer.style.opacity = "0.8";
+    videoContainer.classList.add("floating");
   });
 });

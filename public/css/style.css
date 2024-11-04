@@ -714,8 +714,19 @@ img {
   height: auto;
   overflow: hidden;
   cursor: pointer;
-  opacity: 0.5;
-  transition: opacity 0.3s ease;
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translatey(0); /* Posición inicial y final */
+  }
+  50% {
+    transform: translatey(-8px); /* Desplazamiento hacia arriba */
+  }
 }
 
 video {
