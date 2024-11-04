@@ -524,7 +524,7 @@ img {
   width: 35%;
   height: 100%;
   font-weight: 900;
-  font-size: 4vw;
+  font-size: 4.5vw;
   background: var(--clr-dark-gradient);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -556,7 +556,7 @@ img {
 .exp-heading {
   color: var(--clr-mate);
   width: 100.5%;
-  font-size: 4vw;
+  font-size: 4.5vw;
   font-weight: 900;
   text-align: center;
   background-color: var(--clr-secondary2);
@@ -1759,11 +1759,6 @@ textarea::-webkit-scrollbar {
 
   .hero-btn-div {
     flex-direction: column;
-  }
-
-  .marquee-title {
-    font-family: degulartext;
-    font-weight: 700;
   }
 
   .about-description {
