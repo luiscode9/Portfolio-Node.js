@@ -50,10 +50,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   videoContainer.addEventListener("mouseover", () => {
     video.play();
+    videoContainer.style.opacity = "1";
   });
 
   videoContainer.addEventListener("mouseout", () => {
     video.pause();
+    videoContainer.style.opacity = "0.8";
   });
 });
 
@@ -63,13 +65,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   videoContainer.addEventListener("mouseover", () => {
     video.play();
+    videoContainer.style.opacity = "1";
   });
 
   videoContainer.addEventListener("mouseout", () => {
     video.pause();
+    videoContainer.style.opacity = "0.8";
   });
 });
-
-
-
-
