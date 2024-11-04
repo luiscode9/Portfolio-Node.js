@@ -4,7 +4,7 @@ const openMenu = (toggleId, navId) => {
   const toggle = document.getElementById(toggleId);
   const nav = document.getElementById(navId);
   const menuItems = nav.querySelectorAll("li");
-  const body = document.body; 
+  const body = document.body;
 
   toggle.addEventListener("click", () => {
     nav.classList.toggle("show-menu");
@@ -21,7 +21,7 @@ const openMenu = (toggleId, navId) => {
     item.addEventListener("click", () => {
       nav.classList.remove("show-menu");
       toggle.classList.remove("show-icon");
-      body.classList.remove("no-scroll"); 
+      body.classList.remove("no-scroll");
     });
   });
 };
@@ -58,12 +58,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   videoContainer.addEventListener("mouseover", () => {
     video.play();
-    videoContainer.classList.remove("floating");
+    videoContainer.classList.add("paused");
   });
 
   videoContainer.addEventListener("mouseout", () => {
     video.pause();
-    videoContainer.classList.add("floating");
+    videoContainer.classList.remove("paused");
   });
 });
 
@@ -73,11 +73,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   videoContainer.addEventListener("mouseover", () => {
     video.play();
-    videoContainer.classList.remove("floating");
+    videoContainer.classList.add("paused");
   });
 
   videoContainer.addEventListener("mouseout", () => {
     video.pause();
-    videoContainer.classList.add("floating");
+    videoContainer.classList.remove("paused");
   });
 });
