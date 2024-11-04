@@ -1514,13 +1514,14 @@ textarea::-webkit-scrollbar {
   }
 
   .scroll {
-    width: 49px;
-    height: 49px;
+    width: 48px;
+    height: 48px;
   }
 
   .scroll::before {
-    width: 8px;
-    height: 8px;
+    left: 14px;
+    width: 11px;
+    height: 11px;
   }
 
   .link-desktop-nav {
