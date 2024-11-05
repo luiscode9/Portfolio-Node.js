@@ -1955,7 +1955,7 @@ textarea::-webkit-scrollbar {
 .video-container1,
 .video-container2 {
   position: relative;
-  width: 50%;
+  width: 40%;
   height: auto;
   overflow: hidden;
   cursor: pointer;
