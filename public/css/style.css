@@ -382,7 +382,7 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: var(--space-fourunits) var(--space-threeunits);
+  padding: var(--space-fiveunits) var(--space-threeunits);
   background-color: var(--clr-light-blue);
 }
 
@@ -684,7 +684,7 @@ img {
   justify-content: center;
   border-top: 2px solid var(--clr-mate);
   background-color: var(--clr-light-blue);
-  padding: var(--space-sixunits) var(--space-twounits);
+  padding: var(--space-fiveunits) var(--space-twounits);
 }
 
 .projects-heading {
@@ -862,7 +862,7 @@ img {
 }
 
 .logos-slide img {
-  height: 3vw;
+  height: 2.3vw;
   object-fit: cover;
   margin-left: 3.5rem;
 }
@@ -1516,7 +1516,7 @@ textarea::-webkit-scrollbar {
   }
 
   .about-section {
-    padding: var(--space-sixunits) var(--space-unit);
+    padding: var(--space-fiveunits) var(--space-unit);
   }
 
   .about-description {
@@ -1639,7 +1639,7 @@ textarea::-webkit-scrollbar {
   }
 
   .res-img {
-    width: 50%;
+    width: 45%;
     display: flex;
   }
 }
@@ -1793,7 +1793,7 @@ textarea::-webkit-scrollbar {
   }
 
   .projects-section {
-    padding: var(--space-threeunits) var(--space-unit);
+    padding: var(--space-fiveunits) var(--space-unit);
   }
 
   .project-row-div1 {
@@ -1805,7 +1805,7 @@ textarea::-webkit-scrollbar {
   }
 
   .process-section {
-    padding: var(--space-fourunits) var(--space-unit);
+    padding: var(--space-fiveunits) var(--space-unit);
   }
 
   .process-container {
@@ -1829,7 +1829,7 @@ textarea::-webkit-scrollbar {
   }
 
   .form-section {
-    padding: var(--space-fourunits) var(--space-unit) var(--space-twounits) var(--space-unit);
+    padding: var(--space-fiveunits) var(--space-unit) var(--space-twounits) var(--space-unit);
   }
 
   .inputs {
