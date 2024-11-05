@@ -1640,7 +1640,7 @@ textarea::-webkit-scrollbar {
   }
 
   .res-img {
-    width: 95%;
+    width: 50%;
     display: flex;
   }
 }
@@ -1739,6 +1739,10 @@ textarea::-webkit-scrollbar {
 
   .hero-btn-div {
     flex-direction: column;
+  }
+
+  .hero-right-side {
+    height: 440px;
   }
 
   .about-description {
