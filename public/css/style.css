@@ -862,7 +862,7 @@ img {
 }
 
 .logos-slide img {
-  height: 2.3vw;
+  height: 2.5vw;
   object-fit: cover;
   margin-left: 3.5rem;
 }
@@ -1030,11 +1030,11 @@ textarea::-webkit-scrollbar {
 }
 
 .submit-btn {
-  width: 100%;
+  width: auto;
   color: var(--clr-neutral-light);
-  font-size: 1.4vw;
+  font-size: 1.2vw;
   font-weight: bold;
-  padding: 10px 24px;
+  padding: 10px var(--space-twounits);
   border-radius: var(--radius-50);
   white-space: nowrap;
   letter-spacing: var(--letter-s);
@@ -1639,7 +1639,7 @@ textarea::-webkit-scrollbar {
   }
 
   .res-img {
-    width: 45%;
+    width: 43%;
     display: flex;
   }
 }
