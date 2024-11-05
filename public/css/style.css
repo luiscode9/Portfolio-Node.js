@@ -96,6 +96,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 h1 {
+  font-display: swap;
   font-family: drukwide;
 }
 
@@ -891,6 +892,7 @@ img {
   font-size: 4vw;
   font-family: drukwide;
   font-weight: 900;
+  font-display: swap;
   text-transform: uppercase;
 }
 
