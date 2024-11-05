@@ -691,7 +691,7 @@ img {
 .projects-heading {
   width: 100%;
   height: 100%;
-  font-size: 7vw;
+  font-size: 7.5vw;
   text-align: center;
   font-weight: 900;
   padding: var(--space-unit);
@@ -786,7 +786,8 @@ img {
 }
 
 .project-heading {
-  font-size: 0.8rem;
+  width: auto;
+  font-size: 0.9rem;
   font-weight: 800;
   text-align: center;
   color: var(--clr-neutral-light);
@@ -802,8 +803,8 @@ img {
 }
 
 .project-arrow {
-  width: 15px;
-  height: 15px;
+  width: 17px;
+  height: 17px;
   color: var(--clr-neutral-light);
 }
 
@@ -1636,7 +1637,7 @@ textarea::-webkit-scrollbar {
   }
 
   .res-img {
-    width: 50%;
+    width: 60%;
     display: flex;
   }
 }
@@ -1793,11 +1794,6 @@ textarea::-webkit-scrollbar {
     padding: var(--space-fourunits) var(--space-unit);
   }
 
-  .project-heading {
-    width: auto;
-    font-family: degulartext;
-  }
-
   .process-section {
     padding: var(--space-fourunits) var(--space-unit);
   }
@@ -1832,7 +1828,6 @@ textarea::-webkit-scrollbar {
   }
 
   .submit-btn {
-    height: 46px;
     font-size: 0.9rem;
   }
 
