@@ -1952,6 +1952,10 @@ textarea::-webkit-scrollbar {
   position: relative;
   width: 40%;
   height: auto;
+  border-top-left-radius: 21px;
+  border-top-right-radius: 37px;
+  border-bottom-right-radius: 21px;
+  border-bottom-left-radius: 37px;
   overflow: hidden;
   cursor: pointer;
 }
