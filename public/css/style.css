@@ -213,7 +213,8 @@ img {
 }
 
 .logo {
-  width: 100px;
+  width: 120px;
+  height: 55px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -389,19 +390,32 @@ img {
 .hero-container {
   width: 100%;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  align-items: start;
+  gap: var(--space-unit);
+}
+
+.hero-left-div {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   gap: var(--space-unit);
 }
 
 .hero-left-side {
-  width: 41%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   border-radius: var(--btnradius);
   background-color: var(--clr-mate);
   padding: var(--space-twounits);
   gap: var(--space-threeunits);
+}
+
+.hero-left-bottom {
+  padding: var(--space-twounits);
+  background-color: var(--clr-neutral-light);
+  border-radius: var(--btnradius);
 }
 
 .hero-content {
@@ -455,7 +469,7 @@ img {
 }
 
 .hero-right-side {
-  width: 60%;
+  width: 30%;
   height: 686px;
 }
 
